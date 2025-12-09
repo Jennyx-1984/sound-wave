@@ -1,0 +1,18 @@
+.cta-join{
+    background-color: #1762A7;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.cta-join:hover{
+    background-color: #2180d8;
+}
+
+
+.cta-join:focus{
+    background-color: #2796ff;
+}

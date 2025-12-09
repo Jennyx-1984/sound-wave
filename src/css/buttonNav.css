@@ -1,0 +1,11 @@
+.btn-nav{
+    border: none;
+    color:white;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn-nav:hover{
+    background-color: #202027;
+}
