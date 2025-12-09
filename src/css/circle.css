@@ -1,0 +1,33 @@
+#circle-one{
+    background-color: #bc3a801a;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -20;
+    top:50px;
+    left:100px;
+}
+
+#circle-two{
+    background-color: #3457b21a;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -20;
+    top:-100px;
+    left:500px;
+}
+
+
+#circle-three{
+    background-color: #3457b21a;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -20;
+    bottom:-350px;
+    right:-300px;
+}
