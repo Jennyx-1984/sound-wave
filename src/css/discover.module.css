@@ -1,0 +1,72 @@
+h2{
+    color: white;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.discover{
+    width: 50%;
+    height: 50%;
+    margin:180px auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container_discover{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+}
+
+.field_btn{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.field_covers{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.covers{
+    width: 100%;
+}
+
+.intro_disc{
+    color: white;
+}
+
+@media (min-width:320px) and (max-width:476px){
+    main{
+        height:80vh;
+        overflow:scroll;
+    }
+    
+    .discover{
+        width: 98%;
+        height:75vh;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+
+    .container_discover{
+        width:85%;
+        margin: 0 auto;
+    }
+
+    .field_btn{
+        padding-left: 10px;
+    }
+
+    .field_covers{
+        width: 60%;
+        margin: 30px auto;
+    }
+}

@@ -1,0 +1,24 @@
+.linkReset {
+   text-decoration: none;
+   color: inherit;
+}
+
+.btn_dsc{
+    background-color: #202027;
+    width: 80px;
+    height: 80px;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    border:none;
+    cursor: pointer;
+}
+
+.btn_image{
+    width: 40%;
+}

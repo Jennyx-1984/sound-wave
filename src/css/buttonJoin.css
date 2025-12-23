@@ -7,11 +7,9 @@
     border: none;
 }
 
-
 .cta-join:hover{
     background-color: #2180d8;
 }
-
 
 .cta-join:focus{
     background-color: #2796ff;

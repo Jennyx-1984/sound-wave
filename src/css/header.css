@@ -26,7 +26,6 @@ a{
     gap: 5%;
 }
 
-
 ul{
     display: flex;
     justify-content: center;
@@ -34,4 +33,35 @@ ul{
     gap: 10%;
     list-style: none;
     width: 300px;   
+}
+
+@media (min-width:320px) and  (max-width:476px){
+    header{
+        width: 100vw;
+        padding-top: 3vh;
+        padding-left: 0;
+    }
+
+    h1{
+        font-size: 5vw;
+        font-weight: 400;
+    }
+
+    .cabecera{
+        width: 70vw;
+        padding-left: 8vw;
+    }
+
+    nav{
+        margin-left:80px;
+    }
+    
+    .btn-nav{
+        font-size: 5vw;
+    }
+
+    ul{
+        width:1.9vw;
+        gap:4vw;
+    }
 }

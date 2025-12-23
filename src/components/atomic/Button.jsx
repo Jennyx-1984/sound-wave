@@ -1,7 +1,8 @@
 import '../../css/ButtonNav.css';
+import '../../css/buttonJoin.css';
 import { useNavigate } from 'react-router-dom';
 
-const ButtonNav=({texto, BtnClass,path})=>{
+const Button=({texto, BtnClass,path})=>{
     const navigate = useNavigate();
 return(
 <>
@@ -11,4 +12,4 @@ return(
 )
 }
 
-export default ButtonNav;
+export default Button;

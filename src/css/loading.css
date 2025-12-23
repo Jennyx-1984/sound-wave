@@ -15,8 +15,24 @@
     height: 80px;
 }
 
-
 .title-load{
     font-size: 70px;
     color: #4f5690;
+}
+
+@media (min-width:320px) and (max-width:476px){
+    .loading{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    .loading img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .title-load{
+        font-size: 40px;
+    }
 }

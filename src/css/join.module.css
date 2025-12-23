@@ -1,0 +1,30 @@
+.main_join{
+    position: relative;
+}
+
+.container_wrap{
+    width: 70vw;
+    height:50vh;
+    margin:150px auto;
+    display: flex;
+}
+
+.container_text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.text_color{
+    color: #bc3a80;
+}
+
+.container_form{
+    width: 50%;
+}

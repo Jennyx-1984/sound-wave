@@ -20,7 +20,6 @@
     left:500px;
 }
 
-
 #circle-three{
     background-color: #3457b21a;
     width: 700px;
@@ -30,4 +29,49 @@
     z-index: -20;
     bottom:-350px;
     right:-300px;
+}
+
+#circle-four{
+    background-color: #bc3a801a;
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    border-radius: 50%;
+    z-index: -10;
+    top:18vh;
+    left: -8vw;
+}
+
+#circle-five{
+    background-color: #3457b21a;
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    z-index: -10;
+    top:-32vh;
+    left:23vw;
+}
+
+@media (min-width:320px) and (max-width:476px){
+    #circle-one{
+        width: 100px;
+        height: 100px;
+        top:70vh;
+        left:5vw;
+    }
+
+    #circle-two{
+        width: 100px;
+        height: 100px;
+        left: 25vw;
+        top:5vh;
+    }
+
+    #circle-three{
+        width: 200px;
+        height: 200px;
+        top:75vh;
+        left:70vw;
+    }
 }
