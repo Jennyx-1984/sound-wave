@@ -21,8 +21,7 @@
     animation: work .375s steps(1, start) infinite;
     font-size: 7px;
     height: 1em;
-    margin-bottom:500px;
-    margin-left:950px;
+    margin:50px auto;
     position: relative;
     width: 1em;
     box-shadow:

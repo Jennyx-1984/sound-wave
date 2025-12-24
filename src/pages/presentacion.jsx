@@ -12,8 +12,8 @@ return(
         <div className='container'>   
 <           img src={backgroundImage} alt='Chica escuchando musica'/>
             <div className='container-text'>
-                <h2>Feel The Music</h2>
-                <p>Stream over 20 thousand songs with one click</p>
+                <h2 className='title-present'>Feel The Music</h2>
+                <p className='intro-present'>Stream over 20 thousand songs with one click</p>
                 <Button texto="Join Now" BtnClass="cta-join" path="/join"/>
             </div>
         </div>

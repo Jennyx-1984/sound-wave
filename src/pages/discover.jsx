@@ -7,10 +7,10 @@ import Covers from "../assets/images/covers.jpg";
 
 function Discover(){
 return(
-    <main>
+    <main className={styles.main_discover}>
         <section className={styles.discover}>
             <div className={styles.container_discover}>
-                <h2>Discover new music</h2>
+                <h2 className={styles.title_discover}>Discover new music</h2>
                 <div className={styles.field_btn}>
                     <ButtonDiscover  image={Microphone} text="Charts" path="/construction"/>
                     <ButtonDiscover image={Albums} text="Albums" path="/construction"/>

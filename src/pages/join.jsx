@@ -9,7 +9,7 @@ function Join(){
                 <Circle id="circle-four"/>
                 <Circle id="circle-five"/>   
                 <div className={styles.container_text}>    
-                    <h2>Join the <span className={styles.text_color}>fun.</span></h2>
+                    <h2 className={styles.title_join}>Join the <span className={styles.text_color}>fun.</span></h2>
                 </div>
                 <div className={styles.container_form}>
                      <Form/>   

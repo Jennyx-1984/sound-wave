@@ -1,16 +1,66 @@
-h2{
+    .main_discover{
+        height: 90dvh;
+        overflow: hidden;
+    }
+    
+    .title_discover{
     color: white;
     font-size: 45px;
     font-weight: 400;
+    margin-bottom: 20px;
+}
+    .discover{
+        width: 98%;
+        height:70vh;
+        flex-direction: column;
+        margin: 50px auto 0 auto;
+    }
+
+    .container_discover{
+        width:85%;
+        margin: 0 auto;
+    }
+
+    .field_btn{
+        padding-left: 10px;
+        display: flex;
+        flex-direction: row;
+        gap:15px;
+        margin-bottom: 20px;
+    }
+
+    .intro_disc{
+    color: white;
+    }
+
+    .field_covers{
+        width: 60%;
+        margin: 40px auto;
+    }
+
+    .covers{
+    width: 100%;
+}
+
+
+
+@media (min-width: 1200px) {
+.main_discover{
+    height: 80dvh;
+}
+
+.title_discover{
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
 }
 
 .discover{
     width: 50%;
     height: 50%;
-    margin:180px auto;
+    margin:180px auto 0 auto;
     display: flex;
     flex-direction: row;
-    
 }
 
 .container_discover{
@@ -39,34 +89,5 @@ h2{
     width: 100%;
 }
 
-.intro_disc{
-    color: white;
-}
 
-@media (min-width:320px) and (max-width:476px){
-    main{
-        height:80vh;
-        overflow:scroll;
-    }
-    
-    .discover{
-        width: 98%;
-        height:75vh;
-        flex-direction: column;
-        margin: 50px auto;
-    }
-
-    .container_discover{
-        width:85%;
-        margin: 0 auto;
-    }
-
-    .field_btn{
-        padding-left: 10px;
-    }
-
-    .field_covers{
-        width: 60%;
-        margin: 30px auto;
-    }
 }

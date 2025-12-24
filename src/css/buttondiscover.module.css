@@ -22,3 +22,15 @@
 .btn_image{
     width: 40%;
 }
+
+@media (min-width: 1200px) {
+    .btn_dsc{
+        width: 100px;
+        height: 100px;
+        font-size: 20px;
+    }
+
+    .btn_image{
+        width: 45%;
+    }
+}
