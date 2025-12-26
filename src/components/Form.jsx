@@ -1,10 +1,20 @@
 import { useState } from "react";
 import styles from "../css/form.module.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
-function Form() {
+
+function Form({createData,error}) {
     const patternName=/^[A-Za-zÁÉÍÓÚáéíóúÑñÜüçÇ'\s\-]+$/;
-    const patterEmail=/^([A-Za-z0-9_-]+\@[\da-z\.-]+\.[a-z\.]{2,6})$/;
+    const patternEmail=/^([A-Za-z0-9_-]+\@[\da-z\.-]+\.[a-z\.]{2,6})$/;
+    const [errorMessage, setErrorMessage] = useState(null);
+
+    useEffect(() => {
+      if (error) {
+        error.message || "API Error";
+     }
+  }, [error]);
+    
     const navigate = useNavigate();
     const [formValues, setFormValues] = useState({
         name: "",
@@ -12,11 +22,11 @@ function Form() {
         password: "",
     });
 
-  const [formErrors, setFormErrors] = useState({
-    name: "",
-    email: "",
-    password: "",
-  });
+    const [formErrors, setFormErrors] = useState({
+      name: "",
+      email: "",
+      password: "",
+    });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -40,7 +50,7 @@ function Form() {
       case "email":
         if(value.trim()===""){
             error="Empty field";
-        }else if (!patterEmail.test(value)) {
+        }else if (!patternEmail.test(value)) {
           error = "Invalid Email";
         }
         break;
@@ -54,21 +64,30 @@ function Form() {
       default:
         return true;
     }
-
     setFormErrors((prev) => ({ ...prev, [name]: error }));
   };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if(formValues.name==="" || formValues.email==="" || formValues.password==="" ){
-        alert("All fields are required");
-    }else{
-    navigate("/submit", { state: { ...formValues } });
-    }
-  };
-
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!formValues.name || !formValues.email || !formValues.password) {
+    alert("All fields are required");
+    return;
+  }
+  const hasErrors = Object.values(formErrors).some(err => err);
+  if (hasErrors) {
+    alert("Please fix form errors");
+    return;
+  }
+  const res = await createData(formValues);
+  if (res.err) {
+    alert(res.message || "Server error");
+    return;
+  }
+  setErrorMessage(null);
+  navigate("/submit", { state: res });
+};
   return (
-    <form onSubmit={handleSubmit} method="post" encType="application/x-www-form-urlencoded" action="/submit">
+    <>
+    <form onSubmit={handleSubmit}>
         <div className={styles.field}>
             <label htmlFor="name">Name:</label>
             <input
@@ -91,46 +110,47 @@ function Form() {
             </span>
         </div>
 
-      <div className={styles.field}>
-      <label htmlFor="email">Email:</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        accessKey="e"
-        tabIndex={2}
-        value={formValues.email}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        aria-invalid={!!formErrors.email}
-        aria-describedby={formErrors.email ? "emailError" : undefined}
-      />
-        <span id="emailError" role="alert" className={`error ${formErrors.email ? styles.visible : ""}`}>
+        <div className={styles.field}>
+          <label htmlFor="email">Email:</label>
+          <input
+                id="email"
+                name="email"
+                type="email"
+                accessKey="e"
+                tabIndex={2}
+                value={formValues.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                aria-invalid={!!formErrors.email}
+                aria-describedby={formErrors.email ? "emailError" : undefined}
+            />
+          <span id="emailError" role="alert" className={`error ${formErrors.email ? styles.visible : ""}`}>
           {formErrors.email || "\u00A0"}
-        </span>
+          </span>
       </div>
 
       <div className={styles.field}>
-      <label htmlFor="password">Password:</label>
-      <input
-        id="password"
-        name="password"
-        type="password"
-        accessKey="p"
-        tabIndex={3}
-        value={formValues.password}
-        onChange={handleChange}
-        onBlur={handleBlur}
-        aria-invalid={!!formErrors.password}
-        aria-describedby={formErrors.password ? "passError" : undefined}
-      />
+          <label htmlFor="password">Password:</label>
+          <input
+              id="password"
+              name="password"
+              type="password"
+              accessKey="p"
+              tabIndex={3}
+              value={formValues.password}
+              onChange={handleChange}
+              onBlur={handleBlur}
+              aria-invalid={!!formErrors.password}
+              aria-describedby={formErrors.password ? "passError" : undefined}
+            />
         <span id="passError" role="alert" className={`error ${formErrors.password ? styles.visible : ""}`}>
           {formErrors.password || "\u00A0"}
         </span>
     </div>
-      <button type="submit" className={styles.join} tabIndex={4} accessKey="b">Join Now</button>
-    </form>
+    <button type="submit" className={styles.join} tabIndex={4} accessKey="b">Join Now</button>
+  </form>
+    {errorMessage && <div>{errorMessage}</div>}
+</>
   );
 }
-
 export default Form;
