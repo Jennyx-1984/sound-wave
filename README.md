@@ -78,77 +78,76 @@ npx vitest run --coverage
 soundwave/
 ├── src/
 │   ├── components/
-|   |    |__atomic/
-|   |    |   |__ Button.jsx
-|   |    |   |__ButtonDiscover.jsx
-|   |    |   |__Circle.jsx    
-|   |    |__helpers/
-|   |    |    |__createData.jsx
-|   |    |    |__helpCrud.jsx
-|   |    |__Footer.jsx
-|   |    |__Form.jsx
-|   |    |__Header.jsx
-|   |    |__Loading.jsx
+│   │   ├── atomic/
+│   │   │   ├── Button.jsx
+│   │   │   ├── ButtonDiscover.jsx
+│   │   │   └── Circle.jsx
+│   │   ├── helpers/
+│   │   │   ├── createData.jsx
+│   │   │   └── helpCrud.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Form.jsx
+│   │   ├── Header.jsx
+│   │   └── Loading.jsx
 │   ├── pages/
-|   |    |__construction.jsx
-|   |    |__discover.jsx
-|   |    |__join.jsx
-|   |    |__presentacion.jsx
-|   |    |__submit.jsx
+│   │   ├── construction.jsx
+│   │   ├── discover.jsx
+│   │   ├── join.jsx
+│   │   ├── presentacion.jsx
+│   │   └── submit.jsx
 │   ├── services/
-|   |    |__userService.js
+│   │   └── userService.js
 │   ├── css/
-|   |    |__buttondiscover.module.css
-|   |    |__buttonJoin.css
-|   |    |__buttonNav.css
-|   |    |__circle.css
-|   |    |__construction.module.css
-|   |    |__discover.module.css
-|   |    |__footer.module.css
-|   |    |__form.module.css
-|   |    |__header.css
-|   |    |__join.module.css
-|   |    |__loading.css
-|   |    |__mainlayout.module.css
-|   |    |__presentacion.css
-|   |    |__submit.module.css
-|   |__ tests/
-|   |    |__ app.test.jsx
-|   |    |__ button.test.jsx
-|   |    |__ buttonDiscover.test.jsx
-|   |    |__ circle.test.jsx
-|   |    |__ construction.test.jsx
-|   |    |__ createData.test.jsx
-|   |    |__ discover.test.jsx
-|   |    |__ errorForm.test.jsx
-|   |    |__ footer.test.jsx
-|   |    |__ form.test.jsx
-|   |    |__ header.test.jsx
-|   |    |__ helpCrud.test.jsx
-|   |    |__ join.test.jsx
-|   |    |__ layout.test.jsx
-|   |    |__ loading.test.jsx
-|   |    |__ presentacion.test.jsx
-|   |    |__ submit.test.jsx
-|   |    |__ validationForm.test.jsx
+│   │   ├── buttondiscover.module.css
+│   │   ├── buttonJoin.css
+│   │   ├── buttonNav.css
+│   │   ├── circle.css
+│   │   ├── construction.module.css
+│   │   ├── discover.module.css
+│   │   ├── footer.module.css
+│   │   ├── form.module.css
+│   │   ├── header.css
+│   │   ├── join.module.css
+│   │   ├── loading.css
+│   │   ├── mainlayout.module.css
+│   │   ├── presentacion.css
+│   │   └── submit.module.css
+│   ├── tests/
+│   │   ├── app.test.jsx
+│   │   ├── button.test.jsx
+│   │   ├── buttonDiscover.test.jsx
+│   │   ├── circle.test.jsx
+│   │   ├── construction.test.jsx
+│   │   ├── createData.test.jsx
+│   │   ├── discover.test.jsx
+│   │   ├── errorForm.test.jsx
+│   │   ├── footer.test.jsx
+│   │   ├── form.test.jsx
+│   │   ├── header.test.jsx
+│   │   ├── helpCrud.test.jsx
+│   │   ├── join.test.jsx
+│   │   ├── layout.test.jsx
+│   │   ├── loading.test.jsx
+│   │   ├── presentacion.test.jsx
+│   │   ├── submit.test.jsx
+│   │   └── validationForm.test.jsx
 │   ├── App.jsx
-│   └── main.jsx
-|   |__ App.css
-|   |__ index.css
-|   |__ setupTests.ts
+│   ├── main.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── setupTests.ts
 ├── public/
 ├── db.json
+├── index.html
 ├── package.json
-└── vite.config.js
-└── .gitignore
-└── package-lock.json
-└── README.md
-└── tailwind.config.ts
-└── vite.config.js
-└── vitest.config.js
-└── vitest.setup.js
-└── esling.config.js
-└── index.html
+├── package-lock.json
+├── .gitignore
+├── README.md
+├── tailwind.config.ts
+├── vite.config.js
+├── vitest.config.js
+├── vitest.setup.js
+└── eslint.config.js
 
 
 ## 📌 Current Status
