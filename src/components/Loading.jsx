@@ -1,6 +1,6 @@
 import Logo from '../assets/images/logo.png';
 import '../css/loading.css';
-
+import React from 'react';
 
 function Loading(){
     return(

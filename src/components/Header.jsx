@@ -2,6 +2,7 @@ import Button from './atomic/Button';
 import Logo from '../assets/images/logo.png';
 import '../css/header.css';
 import { Link } from "react-router-dom";
+import React from 'react';
 
 const Header= () =>{
     return(

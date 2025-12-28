@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import styles from "../css/submit.module.css";
+import React from "react";
 
 const Submit=()=>{
     const location = useLocation();

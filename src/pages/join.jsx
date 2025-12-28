@@ -2,6 +2,7 @@ import Form from "../components/Form";
 import styles from "../css/join.module.css";
 import Circle from "../components/atomic/Circle";
 import useCrud from "../components/helpers/createData";
+import React from "react";
 
 function Join(){
 

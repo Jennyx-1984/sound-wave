@@ -75,8 +75,34 @@ input:focus{
     color: red;    
 }
 
+.passwordWrapper{
+        position: relative;
+        width: 100%;
+    }
+
+    .passwordInput{
+        width:100%;
+    }
+
+     .togglePassword{
+        position: absolute;
+        width: 9vw;
+        filter: invert(1);
+        right: 3vw;
+        top: 0.3vh;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
 @media (min-width:1200px){
     form{
         width: 30vw;
+    }
+        
+    .togglePassword{
+        width: 1.8vw;
+        right: 1vw;
+        top: 0.3vh;
     }
 }

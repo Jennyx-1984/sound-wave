@@ -2,6 +2,7 @@ import styles from '../css/footer.module.css';
 import Twitter from '../assets/images/twitter.svg';
 import Facebook from '../assets/images/facebook.svg';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 const Footer=()=>{
     return(

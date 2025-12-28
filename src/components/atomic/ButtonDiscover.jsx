@@ -1,5 +1,6 @@
 import styles from '../../css/buttondiscover.module.css';
 import { Link } from 'react-router-dom';
+import React from 'react';
 
 const ButtonDiscover=({text,image,path})=>{
 return(

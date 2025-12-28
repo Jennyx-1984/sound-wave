@@ -2,6 +2,7 @@ import backgroundImage from '../assets/images/landing-page-girl.png';
 import Circle from '../components/atomic/Circle';
 import Button from '../components/atomic/Button';
 import '../css/presentacion.css';
+import React from 'react';
 
 function Presentacion(){
 return(

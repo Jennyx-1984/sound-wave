@@ -4,6 +4,7 @@ import Albums from "../assets/images/albums.svg";
 import More from "../assets/images/more.svg";
 import styles from "../css/discover.module.css";
 import Covers from "../assets/images/covers.jpg";
+import React from "react";
 
 function Discover(){
 return(

@@ -1,4 +1,5 @@
 import '../../css/circle.css';
+import React from 'react';
 
 const Circle=({id})=>{
     return(
