@@ -154,7 +154,7 @@ const handleSubmit = async (e) => {
           <input
                 id="email"
                 name="email"
-                type="text"
+                type="email"
                 accessKey="e"
                 tabIndex={2}
                 value={formValues.email}
