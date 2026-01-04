@@ -86,7 +86,6 @@ input:focus{
 
      .togglePassword{
         position: absolute;
-        /*width: 9vw;*/
         max-width:15%;
         height:90%;
         filter: invert(1);
